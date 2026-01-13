@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SaaS Mockup</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" style="font-family:Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .panel { fill: #ffffff; stroke: #e6e9ee; stroke-width: 1; rx: 10; }
+      .card { fill: #fbfdff; stroke: #e6e9ee; rx:8; }
+      .accent { fill: #0ea5a4; color: #fff; }
+      .muted { fill: #64748b; }
+      .title { font-size: 18px; font-weight: 700; fill: #0f172a; }
+      .subtitle { font-size: 13px; fill: #334155; }
+      .small { font-size: 11px; fill: #475569; }
+      .cta { fill: #ffffff; font-weight: 700; font-size: 13px; }
+      .input { fill: #f8fafc; stroke:#e6e9ee; rx:6; }
+      .pill { fill:#eef2ff; rx:8; stroke:#e6e9ee }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#f8fafc"/>
+
+  <!-- Header mock -->
+  <rect x="32" y="18" width="1136" height="56" rx="10" fill="#ffffff" stroke="#e6e9ee"/>
+  <text x="50" y="55" font-size="18" font-weight="700" fill="#0f172a">YourSaaS</text>
+  <rect x="1020" y="28" width="110" height="30" rx="6" class="accent"/>
+  <text x="1050" y="48" class="cta">Sign in</text>
+
+  <!-- Left: Landing page -->
+  <g transform="translate(32,90)">
+    <rect width="360" height="540" class="panel"/>
+    <text x="22" y="40" class="title">Automate X for Y</text>
+    <text x="22" y="68" class="subtitle">Get results in minutes. Simple, reliable, and affordable.</text>
+
+    <!-- Hero CTA -->
+    <rect x="22" y="88" width="240" height="44" rx="8" fill="#0ea5a4"/>
+    <text x="46" y="116" class="cta">Get early access</text>
+
+    <!-- 3 benefits -->
+    <g transform="translate(22,150)">
+      <rect width="316" height="64" class="card"/>
+      <text x="14" y="30" class="small" style="font-weight:700">Fast setup</text>
+      <text x="14" y="48" class="small">Start in under 10 minutes</text>
+    </g>
+    <g transform="translate(22,228)">
+      <rect width="316" height="64" class="card"/>
+      <text x="14" y="30" class="small" style="font-weight:700">Built for [persona]</text>
+      <text x="14" y="48" class="small">Works with tools you already use</text>
+    </g>
+    <g transform="translate(22,306)">
+      <rect width="316" height="64" class="card"/>
+      <text x="14" y="30" class="small" style="font-weight:700">Affordable pricing</text>
+      <text x="14" y="48" class="small">Plans start at $19/mo</text>
+    </g>
+
+    <!-- Email capture -->
+    <text x="22" y="420" class="small">Join waitlist / get beta access</text>
+    <rect x="22" y="440" width="220" height="40" class="input"/>
+    <text x="30" y="466" class="small">you@company.com</text>
+    <rect x="250" y="440" width="88" height="40" rx="8" fill="#0ea5a4"/>
+    <text x="280" y="468" class="cta">Join</text>
+
+    <!-- Small footer -->
+    <text x="22" y="500" class="small">Trusted by early testers • 24/7 support</text>
+  </g>
+
+  <!-- Middle: Onboarding + Core Feature -->
+  <g transform="translate(420,90)">
+    <rect width="360" height="240" class="panel"/>
+    <text x="20" y="34" class="title">Quick Onboarding</text>
+    <text x="20" y="58" class="small">Answer 3 questions and see results</text>
+
+    <g transform="translate(20,78)">
+      <rect width="320" height="36" class="input"/>
+      <text x="12" y="24" class="small">1. What is your main goal?</text>
+    </g>
+    <g transform="translate(20,122)">
+      <rect width="320" height="36" class="input"/>
+      <text x="12" y="24" class="small">2. Connect a source (optional)</text>
+    </g>
+    <g transform="translate(20,166)">
+      <rect width="220" height="40" rx="8" fill="#0ea5a4"/>
+      <text x="50" y="193" class="cta">Complete setup</text>
+      <rect x="250" y="166" width="90" height="40" rx="8" class="card"/>
+      <text x="278" y="193" class="small" style="font-weight:700">Skip</text>
+    </g>
+
+    <!-- Core Feature preview -->
+    <rect x="0" y="260" width="360" height="370" class="panel"/>
+    <text x="20" y="292" class="title">Core Feature — Run Report</text>
+    <text x="20" y="316" class="small">Input parameters and click Generate</text>
+
+    <g transform="translate(20,334)">
+      <rect width="320" height="44" class="input"/>
+      <text x="12" y="28" class="small">Parameter A • Parameter B</text>
+      <rect x="220" y="0" width="120" height="44" rx="8" fill="#0ea5a4"/>
+      <text x="254" y="31" class="cta">Generate</text>
+    </g>
+
+    <g transform="translate(20,390)">
+      <rect width="320" height="170" class="card"/>
+      <text x="16" y="24" class="small" style="font-weight:700">Result: Summary</text>
+      <text x="16" y="44" class="small">• Key insight 1</text>
+      <text x="16" y="64" class="small">• Key insight 2</text>
+      <text x="16" y="84" class="small">• Actionable next step</text>
+    </g>
+  </g>
+
+  <!-- Right: Dashboard + Pricing -->
+  <g transform="translate(820,90)">
+    <rect width="360" height="540" class="panel"/>
+    <text x="20" y="40" class="title">Dashboard</text>
+    <text x="20" y="64" class="small">Your recent runs and usage</text>
+
+    <!-- Top stats -->
+    <g transform="translate(20,86)">
+      <rect width="320" height="86" class="card"/>
+      <text x="12" y="36" class="small" style="font-weight:700">MRR: $249</text>
+      <text x="120" y="36" class="small">Active users: 12</text>
+      <text x="12" y="58" class="small">Runs this month: 84</text>
+    </g>
+
+    <!-- Recent runs -->
+    <text x="20" y="200" class="small" style="font-weight:700">Recent runs</text>
+    <g transform="translate(20,214)">
+      <rect width="320" height="44" class="card"/>
+      <text x="12" y="30" class="small">Run • 2025-12-30 • View</text>
+    </g>
+    <g transform="translate(20,264)">
+      <rect width="320" height="44" class="card"/>
+      <text x="12" y="30" class="small">Run • 2025-12-28 • View</text>
+    </g>
+
+    <!-- Pricing box -->
+    <g transform="translate(20,330)">
+      <rect width="320" height="180" rx="8" fill="#ffffff" stroke="#e6e9ee"/>
+      <text x="18" y="36" class="title">Pricing</text>
+      <text x="18" y="58" class="small">Starter — $19/mo</text>
+      <text x="18" y="78" class="small">• 100 runs / month</text>
+      <text x="18" y="98" class="small">Pro — $49/mo</text>
+      <text x="18" y="118" class="small">• 1,000 runs / month, integrations</text>
+      <rect x="18" y="140" width="120" height="36" rx="8" fill="#0ea5a4"/>
+      <text x="50" y="165" class="cta">Upgrade</text>
+      <rect x="150" y="140" width="90" height="36" rx="8" class="card"/>
+      <text x="182" y="165" class="small" style="font-weight:700">Contact</text>
+    </g>
+  </g>
+
+  <!-- Footer note -->
+  <text x="36" y="680" class="small">This mockup shows: left = landing & waitlist, middle = onboarding + core feature, right = user dashboard & pricing (use as handoff to designer/developer).</text>
+</svg>
+</body>
+</html>
